@@ -49,21 +49,27 @@ class HomeActivity extends StatelessWidget{
         Positioned(top: 20, left: 270, child: Container(width: 50, height: 50, color: Colors.yellow,),),
         Positioned(top: 20, left: 330, child: Container(width: 50, height: 50, color: Colors.yellow,),),
       ],),
+
+
     SizedBox(height: 20,),
       Align(alignment: Alignment.centerLeft,child: Container(height: 50,width: 100,color: Colors.teal,child: Center(child: Text("Aligned Box", style: TextStyle(fontSize: 15, color: Colors.white),),),),),
 
-
       SizedBox(height: 10,),
-      Center(child: Container(height: 50, width: 150,color: Colors.purpleAccent,),)
+      Center(child: Container(height: 50, width: 150,color: Colors.purpleAccent,
+        child: Center(child: Text("Centered Box", style:TextStyle(color: Colors.white),),),),),
+      SizedBox(height: 20,),
 
+      SizedBox(height: 200, child: Container(color: Colors.yellow,),),
 
+      // Wrap Widget
+      SizedBox(height: 30,),
+      Wrap(spacing: 30, runSpacing: 30,
+        children: [ Container(width: 50, height: 50, color: Colors.red,),
+          Container(width: 50, height: 50, color: Colors.red,),
+          Container(width: 50, height: 50, color: Colors.red,),
+          Container(width: 50, height: 50, color: Colors.blue,),  ],)
     ],),
-
-
-
-
     ));
-
 
   }
 }
