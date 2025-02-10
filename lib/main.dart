@@ -47,12 +47,11 @@ class HomeActivity extends StatelessWidget{
         Positioned(top: 20, left: 140, child: Container(width: 50, height: 50,color: Colors.yellow,),),
         Positioned(top: 20, left: 210, child: Container(width: 50, height: 50,color: Colors.yellow,),),
         Positioned(top: 20, left: 270, child: Container(width: 50, height: 50, color: Colors.yellow,),),
-        Positioned(top: 20, left: 330, child: Container(width: 50, height: 50, color: Colors.yellow,),)
-      ],
-
-
-
-      ),],),
+        Positioned(top: 20, left: 330, child: Container(width: 50, height: 50, color: Colors.yellow,),),
+      ],),
+    SizedBox(height: 20,),
+      Align(alignment: Alignment.centerLeft,child: Container(height: 50,width: 100,color: Colors.teal,child: Center(child: Text("Aligned Box", style: TextStyle(fontSize: 15, color: Colors.white),),),),)
+    ],),
 
 
 
