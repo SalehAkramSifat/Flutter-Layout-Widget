@@ -50,8 +50,14 @@ class HomeActivity extends StatelessWidget{
         Positioned(top: 20, left: 330, child: Container(width: 50, height: 50, color: Colors.yellow,),),
       ],),
     SizedBox(height: 20,),
-      Align(alignment: Alignment.centerLeft,child: Container(height: 50,width: 100,color: Colors.teal,child: Center(child: Text("Aligned Box", style: TextStyle(fontSize: 15, color: Colors.white),),),),)
+      Align(alignment: Alignment.centerLeft,child: Container(height: 50,width: 100,color: Colors.teal,child: Center(child: Text("Aligned Box", style: TextStyle(fontSize: 15, color: Colors.white),),),),),
+
+      SizedBox(height: 10,),
+      Center(child: Container(height: 50, width: 150,color: Colors.purpleAccent,),)
+
+
     ],),
+
 
 
 
